@@ -1,0 +1,30 @@
+Reading input parameters
+ -> matched budget equations by adjusting Omega_Lambda = 6.824071e-01
+Running CLASS version v2.9.0
+Computing background
+ -> age = 13.819443 Gyr
+ -> conformal age = 14159.980026 Mpc
+ -> radiation/matter equality at z = 3416.879107
+    corresponding to conformal time = 112.340812 Mpc
+Computing thermodynamics with Y_He=0.2453
+ -> recombination at z = 1089.183245 (max of visibility function)
+    corresponding to conformal time = 280.301712 Mpc
+    with comoving sound horizon = 144.534798 Mpc
+    angular diameter distance = 12.731509 Mpc
+    and sound horizon angle 100*theta_s = 1.041341
+    Thomson optical depth crosses one at z_* = 1082.115488
+    giving an angle 100*theta_* = 1.045903
+ -> baryon drag stops at z = 1059.214033
+    corresponding to conformal time = 286.180241 Mpc
+    with comoving sound horizon rs = 147.199240 Mpc
+ -> reionization  at z = 11.343475
+    corresponding to conformal time = 4249.640131 Mpc
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+ -> sigma8=0.83317 for total matter (computed till k = 52.7955 h/Mpc)
+No non-linear spectra requested. Nonlinear calculations skipped.
+No harmonic space transfer functions to compute. Transfer module skipped.
+No spectra requested. Spectra module skipped.
+No lensing requested. Lensing module skipped.
+Writing output files in /data/groups/leauthaud/yluo42/prospector/lux/reps/PK_TABS/power_norm_... 

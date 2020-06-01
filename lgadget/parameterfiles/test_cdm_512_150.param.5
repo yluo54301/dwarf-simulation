@@ -1,0 +1,96 @@
+%  Example parameterfile for L-Gadget2
+
+%  File name parameters:
+
+InitCondFile           /path-to-initial-conditions/ics
+OutputDir              /path-to-output-directory
+
+EnergyFile        energy.txt
+InfoFile          info.txt
+TimingsFile       timings.txt
+CpuFile           cpu.txt
+
+RestartFile       restart
+SnapshotFileBase  snapshot
+
+% CPU-time limit
+
+TimeLimitCPU      86400
+ResubmitOn        0
+ResubmitCommand   xyz
+
+CpuTimeBetRestartFile  7200.0
+
+
+MaxMemSize        6144.0 % maximum allowed memory ceiling per CPU
+
+% Code options
+
+ICFormat              1       % only 1 is presently supported
+SnapFormat            1       % only 1 is presently supported
+
+
+NumFilesWrittenInParallel 1   % maximum number of files for which
+                              % simultaneous I/O is done
+
+
+%  Characteristics of run
+
+TimeBegin           0.02
+TimeMax	            1.0
+
+Omega0	              0.3
+OmegaLambda           0.7
+OmegaBaryon           0.0
+HubbleParam           0.7
+
+BoxSize                150.0
+
+Softening             0.020
+SofteningMaxPhys      0.020
+
+% Output frequency
+
+OutputListFilename  snapshot_file.txt
+OutputListOn        1
+
+TimeBetSnapshot        0
+TimeOfFirstSnapshot    0
+ 
+TimeBetStatistics      0.1
+
+
+% Accuracy of time integration
+
+ErrTolIntAccuracy       0.025
+
+MaxSizeTimestep        0.025 
+MinSizeTimestep        0.0008
+MaxRMSDisplacementFac  0.25
+
+
+% Tree algorithm and force accuracy
+
+ErrTolTheta            0.5
+TypeOfOpeningCriterion 0
+ErrTolForceAcc         0.005
+
+
+% Parameters that affect memory usage of the code
+
+PartAllocFactor       2.0
+TreeAllocFactor       0.7
+
+BufferSize            700  % in MByte
+
+% System of units
+
+UnitLength_in_cm         3.085678e24        ;  1.0 Mpc
+UnitMass_in_g            1.989e43           ;  1.0e10 solar masses
+UnitVelocity_in_cm_per_s 1e5                ;  1 km/sec
+GravityConstantInternal  0
+
+
+
+
+
