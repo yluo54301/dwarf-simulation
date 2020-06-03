@@ -1,9 +1,9 @@
 
-Nmesh            64        % This is the size of the FFT grid used to 
+Nmesh            1024        % This is the size of the FFT grid used to 
                            % compute the displacement field. One
                            % should have Nmesh >= Nsample.
 
-Nsample          64        % sets the maximum k that the code uses,
+Nsample          1024        % sets the maximum k that the code uses,
                            % i.e. this effectively determines the
                            % Nyquist frequency that the code assumes,
                            % k_Nyquist = 2*PI/Box * Nsample/2
@@ -19,7 +19,7 @@ OutputDir        ./        % Directory for output
 
 GlassFile        /data/groups/leauthaud/yluo42/prospector/lux/n-genic_growth/GLASS/dummy_glass_dmonly_64.dat % Glass-File
 
-GlassTileFac     1                % Number of times the glass file is
+GlassTileFac     16                % Number of times the glass file is
                                   % tiled in each dimension (must be
                                   % an integer)
 
@@ -80,7 +80,7 @@ RayleighSampling   0         % fix modes amplitude to sqrt(Pk): 1 (NO) 0 (Yes)
 Seed               181170    % seed for IC-generator
 
 
-NumFilesWrittenInParallel 16  % limits the number of files that are
+NumFilesWrittenInParallel 64  % limits the number of files that are
                                % written in parallel when outputting
 
 
