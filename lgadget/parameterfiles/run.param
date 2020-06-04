@@ -15,7 +15,7 @@ SnapshotFileBase  snapshot
 
 % CPU-time limit
 
-TimeLimitCPU      430000
+TimeLimitCPU      1430000
 ResubmitOn        0
 ResubmitCommand   xyz
 
@@ -29,7 +29,7 @@ MaxMemSize        2400.0  % maximum allowed memory ceiling per CPU
 ICFormat              1       % only 1 is presently supported
 SnapFormat            1       % only 1 is presently supported
 
-NumFilesWrittenInParallel 2   % maximum number of files for which
+NumFilesWrittenInParallel 256   % maximum number of files for which
                               % simultaneous I/O is done
 
 
@@ -61,7 +61,7 @@ TimeBetStatistics      0.1
 
 % Accuracy of time integration
 
-ErrTolIntAccuracy       0.05
+ErrTolIntAccuracy       0.015
 
 MaxSizeTimestep        0.025 
 MinSizeTimestep        0.0

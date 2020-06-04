@@ -1,4 +1,4 @@
-OPT   +=  -DPMGRID=256
+OPT   +=  -DPMGRID=1536
 OPT   +=  -DWALLCLOCK   
 
 #OPT   +=  -DFOF
