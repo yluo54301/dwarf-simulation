@@ -1,0 +1,70 @@
+
+This is L-Gadget, version `Lean-Gadget 2.0'.
+
+Running on 640 processors.
+
+Compiled with PMGRID = 1920
+
+making output dir '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs'
+making output dir '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/restart'
+
+found 2 times in output-list.
+
+Hubble (internal units) = 0.1
+G (internal units) = 43007.1
+UnitMass_in_g = 1.989e+43 
+UnitTime_in_s = 3.08568e+16 
+UnitVelocity_in_cm_per_s = 100000 
+UnitDensity_in_cgs = 6.76991e-22 
+UnitEnergy_in_cgs = 1.989e+53 
+
+LGadget Printing File: '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/cpu.txt'
+outputcpu=/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/cpu.txt
+LGadget Printing File: '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/info.txt'
+outputinfo=/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/info.txt
+LGadget Printing File: '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/energy.txt'
+outputenergy=/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/energy.txt
+LGadget Printing File: '/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/timings.txt'
+outputtimings=/data/groups/leauthaud/yluo42/prospector/lux/lgadget/parameterfiles/output_new/logs/timings.txt
+
+Reading ICs...
+Allocating memory for 8388605 particles
+Allocated 384 MByte for particle storage.
+PartMass= 0.0160293
+TotNumPart= 1073741824
+Reading of IC-files finished (took 3.9589 sec)
+
+Setting next time for snapshot file to Time_next= 0.5
+
+dmean=122.07 asmth=81.3802 mass=0.0160293 a=0.01  sqrt(<p^2>)=0.604488  dlogmax=0.189646
+displacement time constraint: 0.025  (0.025)
+
+
+Begin Step 0, Time: 0.01, Redshift: 99, Systemstep: 0, Dloga: 0
+begin domain decomposition... 
+changed particle storage to 384 MByte
+Communication buffer in domain decomposition has room for 1174404 particles (53.76 MByte)
+work-load balance=1.11101   memory-balance=1.11101
+exchange of 1072689764 particles   (took 1.77561 sec)
+reduced particle storage to 84.6562 MByte
+domain decomposition done. (total 1.87768 sec)
+Start Peano-Hilbert ordering.
+keys generated (0.332939 sec)
+sort done. (0.223484 sec)
+reordering done. (0.141559 sec)
+Start force computation...
+Starting periodic PM calculation.
+window length min,max = 1|307515
+start sharing density field w/ 1921 windows
+allocated memory for PM step: 42.2314|84.815|84.815 MB for rho,force,work, max dim of local patch = 1921|1921|1921.
+Use of 211.861 MByte on average for PM calculation.
+sendrecv time min,max = 9.20099|475.903
+finished sharing density field. (took 476.515 sec)
+639: tpd,tl = 0.223476|476.181, tsm,tlbar,twbar = 475.903|     0|     0, wlen =  19, Nwin =  13, mesh length =  240| 231|1920
+finished forward FFT (took 0.542555 sec)
+finished backwards FFT (took 0.515634 sec)
+start assembling local potential w/ 1920 windows
+sendrecv time min,max = 39.8828|2729.91
+finished assembling local potential (2736.95 sec)
+639: tpd,tl = 2.78589|2734.04, tsm,tlbar,twbar = 2729.91|     0|     0, wlen =  19, Nwin =  13, mesh length =  240| 231|1920
+2 total processes killed (some possibly by mpirun during cleanup)
